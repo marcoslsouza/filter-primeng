@@ -21,3 +21,7 @@ Criar component book-data: ng g c book-data
 Criar app-routing.module.ts:
 ng g m app-routing --flat --module=app
 
+Criar o assets/book.json com os dados
+
+Criar o BookService para obter os dados: ng generate service book
+

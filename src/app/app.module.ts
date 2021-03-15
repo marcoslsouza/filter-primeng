@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BookDataComponent } from './book-data/book-data.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
+import { TableModule } from 'primeng/table'; 
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
