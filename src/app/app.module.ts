@@ -6,6 +6,7 @@ import { BookDataComponent } from './book-data/book-data.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { TableModule } from 'primeng/table'; 
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TableModule } from 'primeng/table';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    TableModule
+    TableModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
