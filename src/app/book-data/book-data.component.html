@@ -1,4 +1,5 @@
-<p-table [value]="books">
+<input pInputText type="text" (input)="datatable.filter($event.target.value, 'name', 'contains')">
+<p-table [value]="books" #datatable [rows]="10" [paginator]="true">
     <ng-template pTemplate="header">
         <tr>
             <th>Nome</th>

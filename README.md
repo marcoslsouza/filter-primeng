@@ -25,3 +25,4 @@ Criar o assets/book.json com os dados
 
 Criar o BookService para obter os dados: ng generate service book
 
+http://localhost:4200/books
