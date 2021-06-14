@@ -8,6 +8,10 @@ import { RouterModule } from '@angular/router';
 import { TableModule } from 'primeng/table'; 
 import { HttpClientModule } from '@angular/common/http';
 
+import {CheckboxModule} from 'primeng/checkbox';
+import {ButtonModule} from 'primeng/button';
+import {InputTextModule} from 'primeng/inputtext';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +22,10 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     RouterModule,
     TableModule,
-    HttpClientModule
+    HttpClientModule,
+    CheckboxModule,
+    ButtonModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]

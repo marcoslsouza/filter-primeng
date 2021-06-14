@@ -1,7 +1,10 @@
 {
     "data": [
-        { "name": "The Godfather", "price": 10, "author": "Mario Puzo" },
-        { "name": "The Fellowship of the Ring", "price": 15, "author": "J.R.R. Tolkien" },
-        { "name": "Harry Potter and the Deathly Hallows", "price": 20, "author": "J.K. Rowling" }
+        { "nome": "The Godfather", "preco": 10, "autor": "Mario Puzo" },
+        { "nome": "The Fellowship of the Ring", "preco": 15, "autor": "J.R.R. Tolkien" },
+        { "nome": "Harry Potter and the Deathly Hallows", "preco": 20, "autor": "J.K. Rowling" },
+        { "nome": "Java Como Programar", "preco": 46, "autor": "J.K. L." },
+        { "nome": "Desvendando o CSS", "preco": 67, "autor": "João Paulo" },
+        { "nome": "Angular Avançado", "preco": 200, "autor": "Paulo Henrique" }
     ]
 }

@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-export interface Book { nome; preco; autor; }
+import { Book } from '../app/book-data/Book';
+
+//export interface Book { nome; preco; autor; }
 
 @Injectable({
   providedIn: 'root'

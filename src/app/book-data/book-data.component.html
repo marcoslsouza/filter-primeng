@@ -1,7 +1,13 @@
-<input pInputText type="text" (input)="datatable.filter($event.target.value, 'name', 'contains')">
+<p style="text-align: right;">
+    <span class="p-input-icon-right">
+        <i class="pi pi-search"></i>
+        <input type="text" pInputText (input)="datatable.filter($event.target.value, 'nome', 'contains')" >        
+    </span>
+</p>
 <p-table [value]="books" #datatable [rows]="10" [paginator]="true">
     <ng-template pTemplate="header">
         <tr>
+            <th></th>
             <th>Nome</th>
             <th>Autor</th>
             <th>Preço em Dolar</th>
@@ -9,9 +15,16 @@
     </ng-template>
     <ng-template pTemplate="body" let-book>
         <tr>
-            <td>{{ book.name }}</td>
-            <td>{{ book.author }}</td>
-            <td>{{ book.price }}</td>
+            <td>
+                <p-checkbox [value]="book" (onChange)="montarLista($event, chkBook)" #chkBook></p-checkbox>
+            </td>
+            <td>{{ book.nome }}</td>
+            <td>{{ book.autor }}</td>
+            <td>{{ book.preco }}</td>
         </tr>
     </ng-template>
 </p-table>
+<p style="text-align: center;">
+    <button pButton type="button" label="Simular" (click)="exibeSimulacao()" 
+        [disabled]="listBooks.length == 0 || selecionados > 3"></button>
+</p>
