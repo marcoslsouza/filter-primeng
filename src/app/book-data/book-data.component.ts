@@ -9,8 +9,10 @@ import { Book } from './Book';
 })
 export class BookDataComponent implements OnInit {
 
+  // Lista da grid
   books: Book[];
 
+  // Array de livros para exibicao
   listBooks: Book[] = [];
 
   selecionados: number = 0;
@@ -65,6 +67,24 @@ export class BookDataComponent implements OnInit {
       }
     } else {
       console.log('Não há registros!');
+    }
+  }
+
+
+  public removeLinha(book: Book): void {
+
+    // Remove da lista
+    for(let i=0; i <= this.listBooks.length; i++) {
+      if(this.listBooks[i] == book) {
+        this.listBooks.splice(i, 1);
+      }
+    }
+
+    // Remove da grid
+    for(let i=0; i <= this.books.length; i++) {
+      if(this.books[i] == book) {
+        this.books.splice(i, 1);
+      }
     }
   }
 }

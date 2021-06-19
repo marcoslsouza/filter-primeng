@@ -11,6 +11,7 @@
             <th>Nome</th>
             <th>Autor</th>
             <th>Preço em Dolar</th>
+            <th></th>
         </tr>
     </ng-template>
     <ng-template pTemplate="body" let-book>
@@ -21,6 +22,9 @@
             <td>{{ book.nome }}</td>
             <td>{{ book.autor }}</td>
             <td>{{ book.preco }}</td>
+            <td>
+                <button pButton type="button" label="REMOVER" style="background-color: red;" (click)="removeLinha(book)"></button>
+            </td>
         </tr>
     </ng-template>
 </p-table>
